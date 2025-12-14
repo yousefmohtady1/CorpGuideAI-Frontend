@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CorpGuide AI Assistant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="chat-header">
+        <div class="header-title">
+          <span class="sparkle-icon">✨</span> CorpGuide Assistant
+        </div>
+        <button id="reset-btn" class="new-chat-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            viewBox="0 -960 960 960"
+            width="20"
+          >
+            <path
+              d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+            />
+          </svg>
+          <span>New chat</span>
+        </button>
+      </header>
+
+      <main class="chat-area" id="chat-container">
+        <div class="message bot-message welcome-message">
+          <div class="avatar-container">
+            <span class="bot-avatar">🤖</span>
+          </div>
+          <div class="message-content">
+            <h3>Hello, I'm your HR Policy Assistant.</h3>
+            <p>
+              I can help you with questions about company policies, leaves, or
+              the employee handbook. Ask me anything!
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="input-area">
+        <div class="input-wrapper">
+          <textarea
+            id="user-input"
+            placeholder="Ask anything about HR policies..."
+            rows="1"
+          ></textarea>
+          <button id="send-btn" class="send-button" disabled>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
